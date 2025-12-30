@@ -10,31 +10,39 @@ body {
     color: #333;
 }
 
+/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    position: relative; /* כדי שנוכל למקם את הכותרת במרכז */
+}
+
+/* HEADER */
+header {
+    background: #483d8b;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-header img {
-    width: 100px;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
+    .header-container img {
+        width: 80px;
+        border-radius: 10px;
+    }
 
 header h1 {
-    position: absolute; /* הכותרת באמצע */
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.8rem;
-    text-align: center;
 }
 
 nav {
-    margin-left: auto; /* דוחף את הניווט לימין */
+    margin-left: auto;
 }
 
     nav ul {
@@ -44,104 +52,151 @@ nav {
     }
 
     nav a {
+        color: white;
         text-decoration: none;
-        color: #fff;
         font-weight: bold;
     }
 
-        nav a:hover {
-            color: #ffe26a;
-        }
-
-/* SECTIONS */
+/* SECTION */
 .section {
     padding: 50px 0;
 }
 
-    .section:nth-child(even) {
-        background: #eef1ff;
-    }
-
-h2 {
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
     color: #4b0082;
 }
 
-p {
-    color: #444;
-    font-size: 1.1rem;
+/* ===== משימה 2 ===== */
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
-img.section-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #c8a2ff;
+.card {
+    background: white;
+    width: 260px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+    .card img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+.like-btn {
+    border: none;
+    background: #ffe26a;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ===== משימה 3 ===== */
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    width: 33.333%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.service-item > div {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.service-item h3 {
+    color: #4b0082;
+}
+
+.info {
+    font-size: 0.9rem;
+    color: #777;
+}
+
 
 /* FOOTER */
 footer {
     background: #483d8b;
-    color: #fff;
-    text-align: center;
+    color: white;
     padding: 25px 0;
-    font-size: 16px;
 }
 
-    
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+    .icons img {
+        width: 40px;
+        height: 40px;
     }
 
-   
-    footer img {
-        width: 80px;
-        height: 80px;
-        border-radius: 10px;
-        border: 2px solid #ffe26a;
-        object-fit: cover;
-    }
-
-    
-    footer nav ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-        padding: 0;
-        margin: 10px 0;
-    }
-
-        footer nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-
-   
-    footer .follow_us {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-        footer .follow_us .icons {
-            display: flex;
-            gap: 10px;
-        }
-
-            footer .follow_us .icons a img {
-                width: 40px;
-                height: 40px;
-                object-fit: cover;
-            }
-
-    footer .paragraphs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
+.footer-text {
+    text-align: center;
+}
+.follow-us {
+    background: #483d8b;
+    color:white;
+}
 

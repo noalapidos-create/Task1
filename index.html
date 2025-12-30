@@ -1,78 +1,159 @@
 ﻿<!DOCTYPE html>
 <html lang="he">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europe Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to Europe</h1>
-            <img src="photos/img.jpg" alt="התמונה של נעה" class="header-img" />
 
-            <nav class="main-nav">
+    <header>
+        <div class="container header-container">
+            <img src="photos/img.jpg" alt="Logo">
+            <h1>Welcome to Europe</h1>
+
+            <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section" id="section1">
-            <div class="container">
-                <h2>Section 1</h2>
-                <p>This is an example text for the first section.</p>
-                <img src="photos/1.jpg" alt="Example image" class="section-img" />
+
+       
+        <!--  משימה 2 -->
+       
+        <section class="section task-two">
+            <h2 class="section-title">Popular Cities</h2>
+
+            <div class="container cards-container">
+
+                <div class="card">
+                    <img src="photos/paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>City of lights and romance.</p>
+                    <a href="#">Read more</a>
+                    <button class="like-btn">❤️ Like</button>
+                    <span class="info">12/03/2025 · 1,250 views</span>
+                </div>
+
+                <div class="card">
+                    <img src="photos/rome.jpg" alt="Rome">
+                    <h3>Rome</h3>
+                    <p>The city with ancient history.</p>
+                    <a href="#">Read more</a>
+                    <button class="like-btn">❤️ Like</button>
+                    <span class="info">08/02/2025 · 980 views</span>
+                </div>
+
+                <div class="card">
+                    <img src="photos/vienna.jpg" alt="Vienna">
+                    <h3>Vienna</h3>
+                    <p>Music, culture and architecture.</p>
+                    <a href="#">Read more</a>
+                    <button class="like-btn">❤️ Like</button>
+                    <span class="info">20/01/2025 · 1,430 views</span>
+                </div>
+
             </div>
         </section>
 
-        <section class="section" id="section2">
-            <div class="container">
-                <h2>Section 2</h2>
-                <p>Text for the second section.</p>
+        
+        <!--  משימה 3 -->
+        
+
+        <section class="section services">
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="container services-container">
+
+                <div class="service-item">
+                    <div>
+                        <img src="photos/service1.png" alt="Flights">
+                        <h3>Flight Booking</h3>
+                        <p>Easy and fast flight booking.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">01/03/2025 · 520 views</span>
+                    </div>
+                </div>
+
+
+                <div class="service-item">
+
+                    <div>
+                        <img src="photos/service2.png" alt="Hotels">
+                        <h3>Hotel Search</h3>
+                        <p>Find hotels at great prices.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">04/03/2025 · 610 views</span>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div>
+                        <img src="photos/service3.png" alt="Tours">
+                        <h3>City Tours</h3>
+                        <p>Guided tours in Europe.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">09/03/2025 · 430 views</span>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div>
+                        <img src="photos/service4.png" alt="Transport">
+                        <h3>Transport</h3>
+                        <p>Public and private transport.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">12/03/2025 · 390 views</span>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div>
+                        <img src="photos/service5.png" alt="Food">
+                        <h3>Food Guide</h3>
+                        <p>Best food places.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">16/03/2025 · 710 views</span>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div>
+                        <img src="photos/service6.png" alt="Tips">
+                        <h3>Travel Tips</h3>
+                        <p>Important travel tips.</p>
+                        <a href="#">Read more</a>
+                        <span class="info">20/03/2025 · 850 views</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="section" id="section3">
-            <div class="container">
-                <h2>Section 3</h2>
-                <p>Text for the third section.</p>
+        <div class="follow-us">
+            <p>Follow us:</p>
+            <div class="icons">
+                <a href="#"><img src="photos/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="photos/tik-tok.png" alt="TikTok"></a>
+                <a href="#"><img src="photos/facebook.png" alt="Facebook"></a>
             </div>
-        </section>
+        </div>
+
     </main>
 
     <footer>
-        <div class="container">
-            <img src="photos/img.jpg" alt="Footer Logo" class="footer-logo" />
-
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="follow_us">
-                <p>Follow us:</p>
-                <div class="icons">
-                    <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="Instagram" /></a>
-                    <a href="https://www.tiktok.com/he-IL/"><img src="photos/tik-tok.png" alt="TikTok" /></a>
-                    <a href="https://www.facebook.com/?locale=he_IL"><img src="photos/facebook.png" alt="Facebook" /></a>
-                </div>
-            </div>
-
-            <div class="paragraphs">
-                <p>Name: Noa Lapidos</p>
-                <p>© 2025 My Website</p>
-            </div>
+        <div class="container footer-container">
+            <p>Name: Noa Lapidos</p>
+            <p>© 2025 My Website</p>
         </div>
     </footer>
+
 </body>
 </html>
